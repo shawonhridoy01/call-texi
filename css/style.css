@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --text-color: #222f3e;
+    --white-color: #ffffff;
+    --yellow-color: #ffa801;
+    --secondary-color: red;
+
+  }
+/* global css ================== */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--white-color) ;
+    margin-bottom: 2.5rem;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--text-color) ;
+    margin-bottom: 2rem;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--text-color) ;
+    margin-bottom: 1.5rem;
+    line-height: 40px;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--text-color) ;
+    margin-bottom: 1.5rem;
+    color: var(--yellow-color);
+    text-align: center;
+
+}
+p{
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    
+}
+a{
+    text-decoration: none;
+}
+.nav-item{
+    margin-left: 25px;
+}
+.nav-tag{
+    color: var(--text-color) !important;
+    font-weight: 500 !important; 
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.nav-tag:hover{
+    color: var(--yellow-color) !important;
+}
+.nav-tag::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--yellow-color);
+    color: var(--text-color);
+    transition: 0.3s !important;
+
+}
+
+.nav-tag::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 0%;
+    height: 2px;
+    background-color: var(--yellow-color);
+    color: var(--text-color);
+    transition: 0.3s !important;
+
+}
+
+
+.nav-tag:hover::after{
+    width: 100%;
+    color: var(--yellow-color);
+    
+}
+
+.nav-tag:hover::before{
+    width: 100%;
+    color: var(--yellow-color);
+    
+}
+
+.main-btn{
+    background-color: black;
+    padding: 10px 30px !important;
+    color: var(--white-color) !important;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    transition: 0.3s;
+    display: inline-block;
+}
+.main-btn:hover{
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+
+
+}
+
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* global css end ================== */
+
+/* css start from here  */
+/* header css ===================================================== */
+header{
+    padding: 20px 0;
+}
+/* header css end ===================================================== */
+
+
+/* banner start from here ============================================ */
+.banner{
+    
+    
+}
+.banner .carousel-item{
+    min-height:100vh !important;
+    min-width: 100%;
+    position: relative; 
+    z-index: 1; 
+
+}
+
+.banner .carousel-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.banner .carousel-caption {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    color: #fff;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.banner .carousel-caption h1{
+    font-size: 55px;
+    letter-spacing: 2px;
+    line-height: 86px;
+    margin-bottom: 1.5rem;
+
+}
+.banner .carousel-caption span{
+    color: var(--yellow-color);
+}
+.banner .carousel-caption span::first-line{
+    color: var(--secondary-color);
+    font-size: 80px;
+}
+.banner .carousel-caption p{
+
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+
+}
+
+.banner .carousel-caption .banner-btn{
+    letter-spacing: 1px;
+    background-color: var(--secondary-color);
+    padding: 14px 40px !important;
+}
+
+
+.banner .carousel-caption .banner-btn:hover{
+
+    background-color: var(--yellow-color);
+    padding: 14px 40px !important;
+}
+
+
+
+/* banner end from here ============================================ */
+
+
+/* offer section start from here ================== */
+.offer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #95a5a650;
+}
+.inner-offer{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+    padding: 40px 30px;
+    background-color: var(--white-color);
+    transition: 0.3s;
+    border:none;
+    transform:translateY(0px);
+    margin-bottom: 40px;
+}
+.inner-offer:hover{
+    border-top:3px solid var(--yellow-color) ;
+    transform:translateY(10px)
+}
+.inner-offer .inner-slider-icon{
+    color: var(--yellow-color);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.inner-offer p{
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.inner-offer a{
+    letter-spacing: 1px;
+    color: var(--text-color);
+    transition: 0.3s;
+    position: relative;
+
+}
+
+.inner-offer a::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: var(--yellow-color);
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.inner-offer a:hover{
+    color: var(--yellow-color);
+}
+
+.inner-offer a:hover::before{
+
+    width: 100%;
+    
+}
+
+/* offer carousel customize  */
+.offer .carousel-indicators {
+
+    bottom: -90px;
+
+  }
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--yellow-color);
+}
+
+/* offer carousel customize  */
+/* offer section end from here ================== */
+
+/* our traffic section start ================ */
+.inner-traffic{
+    background-color: var(--text-color);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+    color: var(--white-color);
+    
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+    margin-bottom: 40px;
+    
+    
+}
+.inner-traffic:hover{
+    background-color: var(--yellow-color);
+}
+.inner-traffic h4{
+    display: inline-block;
+    font: bold;
+    color: var(--white-color);
+    margin-left: 20px;
+    line-height: 0;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.inner-traffic .taxi-icon{
+    font-size: 35px;
+
+}
+/* our traffic section end ================ */
+
+
+/* mobile app start from here ============================================= */
+.mobile{
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+}
+.mobile h5{
+    
+    color: var(--white-color);
+    text-align: start;
+    letter-spacing: 1.5px;
+}
+.mobile h2{
+    
+    color: var(--white-color);
+    text-align: start;
+    font-size: 40px;
+
+}
+.mobile p{    
+    color: var(--white-color);
+    text-align: start;
+    margin-bottom: 35px;
+
+}
+.mobile .main-button{
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    padding: 15px 30px;
+    color: var(--white-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 30px 0 30px 0;
+}
+.mobile .icon{
+    color: var(--white-color);
+    margin-right: 20px;
+    font-size: 25px;
+}
+.mobile .playstore{
+    background-color: var(--white-color);
+    color: var(--text-color);
+    transition: 0.5s;
+}
+.mobile .play{
+    color: var(--text-color);
+}
+.mobile .google{
+    transition: 0.5s ;
+}.mobile .google:hover{
+    background-color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 0;
+}
+.mobile .playstore:hover{
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 0;
+}
+.mobile .mobile-list-item{
+    margin-bottom: 20px;
+
+}
+.mobile .check-item{
+    border: 2px solid var(--white-color);
+    width: 10px;
+    height: 10px;
+    font-size: 5px;
+    border-radius: 50%;
+    padding: 2px;
+    font-weight: bold;
+    margin-right:15px ;
+}
+.mobile .inner-mobile-img{
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+
+/* The animation code */
+@keyframes img-inimation {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(30);}
+    100% {transform: translateY(-30);}
+  }
+
+  /* The element to apply the animation to */
+.mobile-img {
+    
+    transform: translateY(-30px);
+    animation-name:img-inimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 0.3s linear;
+  }
+  
+
+  
+/* mobile app end from here ============================================= */
+
+.advantage .inner-advantage {
+
+    margin-bottom: 40px;
+    
+
+}
+.advantage .inner-advantage .advantage-icon{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.advantage .inner-advantage p{
+    color: gray;
+}
+
+
+/* book a ride ==================================== */
+.book-ride{
+    background-color: var(--yellow-color);
+    padding: 100px 0;
+}
+.book-ride-btn{
+    background-color: var(--text-color);
+    padding: 10px 30px;
+    color: var(--white-color);
+    transition: 0.3s;
+    margin-top: 30px;
+    border: 2px solid var(--text-color);
+}
+.book-ride-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+}
+
+/* book a ride ==================================== */
+
+/* call to action =============================== */
+.cta .cta-inner-img{
+    max-width: 540px;
+    position: relative;
+}
+.cta .cta-img{
+    border: 5px solid var(--yellow-color);
+
+
+}
+
+.cta .cta-inner-img::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--yellow-color);
+    opacity: .6;
+    width: 0%;
+    height: 0%;
+    transition: 0.3s;
+}
+.cta .cta-inner-img:hover::after{
+
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* call to action =============================== */
+
+
+/* testimonial section start from here =========================== */
+.testimonial{
+    background-image:linear-gradient(rgba(0,3,0,0.7),rgba(0,0,0,0.5)) ,url("../images/car.jpg");
+    border-radius: 50px 100px 50px 100px;
+    text-align: center;
+}
+.testimonial .inner-carousel-content{
+     max-width: 800px;
+     margin-top: 100px;
+}
+.testimonial .inner-carousel-content .name{
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 0;
+    color: var(--white-color);
+}
+.testimonial .inner-carousel-content .role{
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 0;
+    color: white;
+}
+
+/* testimonial section end from here =========================== */
+
+
+/* latest news carousel =================================== */
+.inner-latest-news{
+    max-width: 380px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 30px;
+    margin-bottom: 40px;
+
+
+}
+.latest-content p{
+    padding-top: 10px;
+    line-height: 35px;
+    letter-spacing: .8px;
+}
+.latest-content h4{
+    padding-top: 10px;
+    line-height: 50px;
+    margin-bottom: 0rem;
+}
+.latest-content .latest-btn{
+    background-color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: var(--white-color);
+}
+.latest-content {
+    padding-left: 0px;
+}
+
+/* latest news carousel =================================== */
+
+
+/* contact section start from here  ==========================*/
+.contact{
+    min-width: 100%;
+}
+.inner-address{
+    background-color: var(--yellow-color);
+    padding: 60px 40px;
+    margin-bottom: 60px;
+    max-width: 500px;
+
+}
+.inner-address .inner-inner-address{
+    color: white;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.inner-address .inner-inner-address h4{
+    color: white;
+    margin-bottom: 0rem;
+    text-align: start;
+}
+.inner-address .inner-inner-address p{
+    color: var(--text-color);
+    font-weight: 500;
+    margin-top: 15px;
+    text-align: start
+
+}
+
+.inner-address .inner-inner-address .contact-icon{
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* form section ========================= */
+
+.input-field{
+    border: none;
+    border-bottom: 2px solid gray;
+    box-shadow: 0;
+    outline: none;
+    position: relative;
+    border-radius: 0;
+    margin-bottom: 30px;
+
+}
+.input-field:focus{
+    box-shadow: none;
+    outline: none;
+}
+/* form section ========================= */
+/* contact section start from here  ==========================*/
+
+
+/* footer section start from here ===================== */
+footer{
+    background-color: var(--text-color);
+    
+}
+footer a{
+    color: var(--white-color);
+    margin-top:30px ;
+}
+footer .social-link{
+    margin-top: 40px;
+
+}
+footer .social-link a{
+    color: var(--white-color);
+    margin-top:30px ;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: 0.3s;
+    line-height: 80px;
+    
+}
+footer .social-link a:hover{
+    background-color: var(--yellow-color);
+    border: 2px solid var(--yellow-color);
+}
+
+footer .footer-one{
+    padding-left: 40px;
+}
+
+
+footer .important-links li{
+    margin-bottom: 20px;
+}
+footer .important-links li a{
+    transition: 0.3s;
+    
+}
+
+footer .important-links li a:hover{
+    color: var(--yellow-color);
+}
+/* footer section end from here ===================== */
+/* css start from here  */

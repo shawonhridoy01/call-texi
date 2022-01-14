@@ -1,0 +1,244 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    h2{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    header{
+        padding: 10px 0;
+    }
+    .nav-item{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .main-btn{
+        margin-left: 0;
+    }
+
+                
+
+
+
+
+/* banner ================ */
+.nav-link{
+    margin: 0;
+}
+
+
+.banner .carousel-item{
+    min-height: 100vh;
+    padding: 160px 0;
+    background-color: red;
+}
+
+.banner .carousel-caption{
+    width: 95%;
+    top: 35%;
+    padding: 0;
+
+}
+
+.banner .carousel-caption h1{
+    font-size: 25px;
+    line-height: 55px;
+    margin-bottom: 0.5rem;
+}
+
+.banner .carousel-caption p{
+    margin-bottom: 0.5rem;
+}
+
+.banner .carousel-caption span::first-line{
+    font-size: 35px;
+}
+.banner-btn{
+    padding: 10px 30px;
+}
+
+/* mobile app section ========================== */
+.mobile .main-button{
+
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 0;
+    padding: 10px 30px;
+
+}
+.mobile h2{
+    line-height: 46px;
+    font-size: 30px;
+}
+.mobile .main-button .google{
+    margin-bottom: 50px;
+}
+.break{
+    display: block;
+    margin: 55px 0;
+}
+/* mobile app section ========================== */
+
+
+/* advantage section start from here  */
+
+.advantage .inner-advantage {
+
+    text-align: center;
+    
+
+}
+/* advantage section end from here  */
+
+/* cta section start from here =========================== */
+.cta-inner-content h4{
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 30px;
+}
+/* cta section start from here =========================== */
+
+/* contact section start from here ================= */
+.inner-address{
+
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.inner-address .inner-inner-address{
+    
+    margin-left: 20px;
+}
+
+/* contact section end  here ================= */
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nav-item{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .main-btn{
+        margin-left: 0;
+    }
+
+
+/* banner ================ */
+.nav-link{
+    margin: 0;
+}
+.banner .carousel-item{
+    min-height: 100vh;
+    padding: 50px 0;
+    
+
+}
+.banner .carousel-caption{
+    width: 90%;
+    top: 32%;
+
+}
+.banner .carousel-caption h1{
+    font-size: 30px;
+    line-height: 55px;
+}
+
+.banner .carousel-caption span::first-line{
+    font-size: 50px;
+}
+
+
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+        
+.nav-item{
+    margin-left: 0px;
+    margin-top: 15px;
+}
+.main-btn{
+    margin-left: 0;
+}
+
+
+
+/* banner ================ */
+.nav-link{
+    margin: 0;
+}
+.banner .carousel-item{
+    min-height: 100vh;
+}
+.banner .carousel-caption{
+    width: 90%;
+    top: 40%;
+}
+.banner .carousel-caption h1{
+    font-size: 35px;
+    line-height: 55px;
+}
+
+.banner .carousel-caption span::first-line{
+
+    font-size: 50px;
+}
+
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+/* header =============== */
+.nav-item{
+    margin-left: 12px;
+}
+/* header =============== */
+
+/* banner ================ */
+.nav-link{
+    margin: 0;
+}
+.banner .carousel-caption{
+    width: 90%;
+}
+.banner .carousel-caption h1{
+    font-size: 45px;
+}
+
+.banner .carousel-caption span::first-line{
+
+    font-size: 60px;
+}
+
+
+/* mobile app section ====================== */
+
+.mobile .main-button{
+
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+.mobile .icon{
+
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+/* mobile app section ====================== */
+
+
+
+
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+ }

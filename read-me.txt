@@ -1,0 +1,21 @@
+section 
+ 1 banner
+ 2 
+
+
+color:
+	text-color:#222f3e
+	
+
+
+    <!-- silder single item  -->
+                                            
+                            <div class="inner-offer">
+                              <i class="fas fa-car inner-slider-icon"></i>
+                              <h4>Fast & Easy Transport</h4>
+                              <p>He nicked it spiffing good time lurgy william bonnet haggle crikey ruddy,bits and bobs charles brown bread bugger what..!</p>
+                              <a href="#" class="learn-more">Learn More 
+                                <i class="fas fa-arrow-right"></i>
+                              </a>
+                            </div>
+                <!-- silder single item  -->
